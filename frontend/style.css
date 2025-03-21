@@ -1,0 +1,452 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.form{
+    border-radius: 15px;
+    background-color: #f8f9fa;
+    padding: 5px;
+    margin: 50px;
+
+}
+
+form input, form textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+/* Section de navigation */
+
+/* Style général de la navbar */
+#nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+/* Conteneur de la navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Liens du menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.nav-links a:hover {
+    color: #f8d210; /* Jaune électrique */
+}
+
+/* Icône burger (cachée par défaut) */
+.burger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive : Menu burger pour mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* Affichage du menu quand il est activé */
+    .nav-active {
+        display: flex;
+    }
+}
+
+
+/* Section bannière */
+#banniere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.ban{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+   
+    background-color: white;
+    border-radius: 10px;
+}
+
+#banniere div {
+    flex: 1; /* Chaque div prend 50% de l'espace */
+}
+
+#banniere h2 {
+    font-size: 28px;
+    color: #333;
+}
+.ban{
+        background-color: #f8f9fa;
+    };
+#banniere p{
+    font-size: 18px;
+    color: #555;
+}
+#text p{
+    font-size: 18px;
+    color: #555;
+}
+#banniere img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rendre le design responsive */
+@media (max-width: 768px) {
+    #banniere {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #banniere div {
+        width: 100%;
+    }
+
+    #banniere img {
+        margin-top: 20px;
+    }
+}
+
+
+/* Section travaux*/
+
+#travaux {
+    padding: 50px;
+    background-color: white;
+}
+
+#travaux h2{
+    font-size: 28px;
+    color: #333;
+}
+
+.chantier {
+    display: flex;
+    padding: 25px;
+    margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.chantier a{
+    font-size: 18px;
+    color: #555;
+}
+
+.chantier div img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+}
+
+/* Pour les chantiers*/
+
+#chantie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+#chantie img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+@media (max-width: 768px) {
+    #chantie {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #chantie div {
+        width: 100%;
+    }
+
+    #chantie img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ban {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ban div {
+        width: 100%;
+    }
+
+    .ban img {
+        margin-top: 20px;
+    }
+}
+
+#chant {
+    padding: 50px;
+    background-color: white;
+}
+
+#chant a{
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+#chant a:hover {
+    color: #f8d210; /* Jaune électrique */
+}
+
+#chantie p{
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+#decon a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#decon{
+    padding: 10px;
+    margin: 10px;
+}
+
+#admin:hover{
+    font-size: medium;
+    
+}
+
+
+/* Animation */
+
+
+/* Animation de fade-in au chargement */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation pour la bannière */
+#banniere {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Animation pour les images des chantiers */
+#chantie img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+#chantie img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Effet hover sur les liens du menu */
+.nav-links li a {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #ffa500;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Effet hover sur le bouton "Voir plus" */
+#decon a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffa500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#decon a:hover {
+    background: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* Effet hover sur le bouton de contact */
+button {
+    background: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* Animation d'apparition progressive des éléments de la page */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#chant, #contact {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Animation du menu burger */
+.burger {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.burger:hover {
+    transform: rotate(90deg);
+}
